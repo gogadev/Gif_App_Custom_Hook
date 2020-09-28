@@ -1,0 +1,61 @@
+.container {
+  background: rgba(241, 241, 241, 0.904);
+  padding: 2rem;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  margin-left: 8rem;
+}
+
+.img {
+  border: 2px solid lightgrey;
+  width: 260px;
+  height: 260px;
+  position: relative;
+  border-bottom-right-radius: 20px;
+}
+
+.btn {
+  position: absolute;
+}
+
+.btn,
+input {
+  outline: lightgrey;
+  width: 80%;
+  border: 1px dotted grey;
+  padding: 0.2rem;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  transition: all 1s ease;
+  cursor: pointer;
+  text-align: center;
+  border-bottom-right-radius: 10px;
+}
+
+.btn:hover {
+  transform: translateY(-0.5rem);
+}
+
+input {
+  margin-left: 9rem;
+  cursor: auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .btn,
+  input {
+    width: 50%;
+  }
+  input {
+    margin-left: 0;
+    position: absolute;
+    top: 98%;
+  }
+}
